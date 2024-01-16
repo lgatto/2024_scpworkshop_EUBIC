@@ -1,5 +1,7 @@
 # Processing and analysing single-cell proteomics with the scp Bioconductor package
 
+## Abstract
+
 Mass spectrometry-based single-cell proteomics (SCP) has become a
 credible player in the single-cell biology arena. Continuous technical
 improvements have pushed the boundaries of sensitivity and throughput
@@ -21,16 +23,39 @@ analysis of published SCP data. This workshop is meant for users
 familiar with R that want to learn current state-of-the-art SCP data
 analysis.
 
+## Installation instructions
+
 Participants should install a recent version of R (version >= 4.3.1)
-and run the following code chunk to install the necessary Bioconductor
-packages:
+and run the following code chunk to install the necessary
+dependencies:
 
 ```r
-install.packages("BiocManager")
+install.packages(c("BiocManager", "remotes"))
 BiocManager::install(version = "3.18", ask = FALSE)
-pkgs <- c("QFeaures", "SingleCellExperiment", "scp", "scpdata")
+pkgs <- c("QFeatures", "SingleCellExperiment", "scp", "scpdata",
+          "ggplot2", "dplyr", "patchwork", "scater",
+          "CambridgeCentreForProteomics/camprotR")
 BiocManager::install(pkgs)
 ```
 
-Workshop material and details will be available at
-https://github.com/lgatto/2024_scpworkshop_EUBIC.
+For the second part, also run the following command to install the
+*scplainer* modelling code (pull request 50):
+
+```r
+BiocManager::install("UCLouvain-CBIO/scp#50")
+```
+
+Those familiar with Docker can also make use of [Docker containers for
+Bioconductor](https://bioconductor.org/help/docker/).
+
+## Workshop material
+
+The workshop will be divided into two parts:
+
+1. The [QFeatures](https://rformassspectrometry.github.io/QFeatures/)
+   data structure for (bulk and single-cell) quantitative proteomics
+   and the [scp](https://github.com/UCLouvain-CBIO/scp/) package.
+2. [Modelling single-cell proteomics data with linear
+   models](https://www.biorxiv.org/content/10.1101/2023.12.14.571792v2).
+
+Details to follow.
