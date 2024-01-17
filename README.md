@@ -33,8 +33,7 @@ dependencies:
 install.packages(c("BiocManager", "remotes"))
 BiocManager::install(version = "3.18", ask = FALSE)
 pkgs <- c("QFeatures", "SingleCellExperiment", "scp", "scpdata",
-          "ggplot2", "dplyr", "patchwork", "scater",
-          "CambridgeCentreForProteomics/camprotR")
+          "ggplot2", "dplyr", "patchwork", "scater")
 BiocManager::install(pkgs)
 ```
 
@@ -45,25 +44,22 @@ For the second part, also run the following command to install the
 BiocManager::install("UCLouvain-CBIO/scp#50")
 ```
 
-Then run the following commands to download the plexDIA SCP data from
-[Derks et
-al. (2022)](https://www.nature.com/articles/s41587-022-01389-w),
-[Leduc et al. (2022)](http://dx.doi.org/10.1101/2021.04.24.441211) and
-[Woo et al. (2022)](http://dx.doi.org/10.1016/j.cels.2022.02.003).
+Then run the following commands to download the data from [Leduc et
+al. (2022)](http://dx.doi.org/10.1101/2021.04.24.441211) and [Woo et
+al. (2022)](http://dx.doi.org/10.1016/j.cels.2022.02.003).
 
 
 ```r
 library("scpdata")
-derks2022()
 leduc2022_pSCoPE()
 woo2022_macrophage()
 ```
 
 We will only run one of these data. The last one is the
 shortest/simplest to analyse (possibly a good pick given the time
-available), while the first two being more complete and biologically
-more interesing.
-
+available), while the first one is more complete and biologically more
+interesing. Other replication/analysis workflow in
+[SCP.replication](https://uclouvain-cbio.github.io/SCP.replication/index.html).
 
 Those familiar with Docker can also make use of [Docker containers for
 Bioconductor](https://bioconductor.org/help/docker/).
