@@ -52,9 +52,8 @@ al. (2022)](https://www.nature.com/articles/s41587-022-01389-w):
 ```r
 library("scpdata")
 derks2022()
+leduc2022_pSCoPE()
 ```
-
-
 Those familiar with Docker can also make use of [Docker containers for
 Bioconductor](https://bioconductor.org/help/docker/).
 
