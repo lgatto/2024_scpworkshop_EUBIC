@@ -55,11 +55,10 @@ leduc2022_pSCoPE()
 woo2022_macrophage()
 ```
 
-We will only run one of these data. The last one is the
+(We will only run one of these data. The last one is the
 shortest/simplest to analyse (possibly a good pick given the time
 available), while the first one is more complete and biologically more
-interesing. Other replication/analysis workflow in
-[SCP.replication](https://uclouvain-cbio.github.io/SCP.replication/index.html).
+interesing.)
 
 Those familiar with Docker can also make use of [Docker containers for
 Bioconductor](https://bioconductor.org/help/docker/).
@@ -68,10 +67,29 @@ Bioconductor](https://bioconductor.org/help/docker/).
 
 The workshop will be divided into two parts:
 
-1. The [QFeatures](https://rformassspectrometry.github.io/QFeatures/)
-   data structure for (bulk and single-cell) quantitative proteomics
-   and the [scp](https://github.com/UCLouvain-CBIO/scp/) package.
-2. [Modelling single-cell proteomics data with linear
-   models](https://www.biorxiv.org/content/10.1101/2023.12.14.571792v2).
+### The infrastructure
 
-Details to follow.
+The [QFeatures](https://rformassspectrometry.github.io/QFeatures/)
+data structure for (bulk and single-cell) quantitative proteomics
+and the [scp](https://github.com/UCLouvain-CBIO/scp/) package.
+
+The `QFeature` infrastructure is used to handle data:
+- [Intro slides](http://bit.ly/qfeatures_intro)
+- [Vignette](https://uclouvain-cbio.github.io/scp/articles/QFeatures_nutshell.html)
+
+Loading SCP data
+- [Intro slides](https://uclouvain-cbio.github.io/scp-teaching/read_scp_data#1)
+- [Vignette](https://uclouvain-cbio.github.io/scp/articles/read_scp.html)
+
+### Modelling
+
+We will apply the *scplainer* modelling approach, described in
+[Modelling single-cell proteomics data with linear
+models](https://www.biorxiv.org/content/10.1101/2023.12.14.571792v2).
+
+The
+[SCP.replication](https://uclouvain-cbio.github.io/SCP.replication/index.html)
+repository provides replication/analysis workflow for several datasets
+that can be directly accessed in
+[scpdata](https://bioconductor.org/packages/release/data/experiment/html/scpdata.html). We
+will be practicing one of the *scplainer* analyses.
