@@ -45,6 +45,16 @@ For the second part, also run the following command to install the
 BiocManager::install("UCLouvain-CBIO/scp#50")
 ```
 
+Then run the following commands to download the plexDIA SCP data from
+[Derks et
+al. (2022)](https://www.nature.com/articles/s41587-022-01389-w):
+
+```r
+library("scpdata")
+derks2022()
+```
+
+
 Those familiar with Docker can also make use of [Docker containers for
 Bioconductor](https://bioconductor.org/help/docker/).
 
