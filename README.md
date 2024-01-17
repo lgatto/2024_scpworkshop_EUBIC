@@ -47,7 +47,8 @@ BiocManager::install("UCLouvain-CBIO/scp#50")
 
 Then run the following commands to download the plexDIA SCP data from
 [Derks et
-al. (2022)](https://www.nature.com/articles/s41587-022-01389-w):
+al. (2022)](https://www.nature.com/articles/s41587-022-01389-w) and
+[Leduc et al. (2022)](http://dx.doi.org/10.1101/2021.04.24.441211).
 
 ```r
 library("scpdata")
