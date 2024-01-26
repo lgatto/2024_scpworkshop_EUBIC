@@ -44,6 +44,8 @@ For the second part, also run the following command to install the
 BiocManager::install("UCLouvain-CBIO/scp#50")
 ```
 
+NB: Make sure not to update `scp` when prompted here, and keep the version in PR50.
+
 Then run the following commands to download the data from [Leduc et
 al. (2022)](http://dx.doi.org/10.1101/2021.04.24.441211) and [Woo et
 al. (2022)](http://dx.doi.org/10.1016/j.cels.2022.02.003).
